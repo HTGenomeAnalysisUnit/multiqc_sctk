@@ -20,3 +20,13 @@ The plugins expects the following file names:
 
 1. **CSV**: `SCTK_*_summary.csv`
 2. **JSON**: `SCTK_*_counts.json`
+
+## Report output
+
+An example report containing the SCTK section is in the example folder.
+
+The plugin will add a new section to the report named SCTK that contains:
+
+- A table with summary stats from QC (% doublets, % contamination, etc)
+
+- Density and cumsum plots for N genes detected, N UMIs, N reads and % mitochondrial reads per cell
