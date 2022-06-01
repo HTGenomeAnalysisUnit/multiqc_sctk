@@ -182,4 +182,19 @@ class MultiqcModule(BaseMultiqcModule):
         }
 
         self.sctk_plot_data['counts'] = update_plot_data('counts',self.sctk_plot_data, sctk_json, f['s_name'])
-        
+
+        self.sctk_plot_config['mito'] = { 
+            'name': 'SCTK - mitochondrial read',
+            'anchor': 'sctk-mito-reads',
+            'description': 'Fraction of mitochondrial reads per cell',
+            'config': {
+                'id': 'sctk-mito-plot',
+                'title': 'SCTK: fraction mitochondrial reads per cell',
+                'data_labels': [
+                    {'name': 'density', 'ylab': 'density', 'xlab': '% mitochondrial reads'},
+                    {'name': 'cumulative', 'ylab': 'fraction of cells mito % > x', 'xlab': '% mitochondrial reads'},
+                ],
+            },
+        }
+
+        self.sctk_plot_data['mito'] = update_plot_data('mito',self.sctk_plot_data, sctk_json, f['s_name'])

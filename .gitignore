@@ -1,4 +1,3 @@
 build/
 dist/
-example/
 *.egg-info/
