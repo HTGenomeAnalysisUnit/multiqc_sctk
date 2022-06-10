@@ -142,6 +142,8 @@ class MultiqcModule(BaseMultiqcModule):
             'config': {
                 'id': 'sctk-umi-plot',
                 'title': 'SCTK: UMI count distribution',
+                'xlab': 'UMI count',
+                'ylab': 'density',
                 'data_labels': [
                     {'name': 'density', 'ylab': 'density', 'xlab': 'UMI count'},
                     {'name': 'cumulative', 'ylab': 'fraction of cells UMI > x', 'xlab': 'UMI count'},
@@ -158,6 +160,8 @@ class MultiqcModule(BaseMultiqcModule):
             'config': {
                 'id': 'sctk-genes-plot',
                 'title': 'SCTK: genes count distribution',
+                'xlab': 'genes count',
+                'ylab': 'density',
                 'data_labels': [
                     {'name': 'density', 'ylab': 'density', 'xlab': 'genes count'},
                     {'name': 'cumulative', 'ylab': 'fraction of cells genes > x', 'xlab': 'genes count'},
@@ -174,6 +178,8 @@ class MultiqcModule(BaseMultiqcModule):
             'config': {
                 'id': 'sctk-reads-plot',
                 'title': 'SCTK: mapped reads distribution',
+                'xlab': 'reads count',
+                'ylab': 'density',
                 'data_labels': [
                     {'name': 'density', 'ylab': 'density', 'xlab': 'reads count'},
                     {'name': 'cumulative', 'ylab': 'fraction of cells reads > x', 'xlab': 'mapped reads count'},
@@ -190,6 +196,8 @@ class MultiqcModule(BaseMultiqcModule):
             'config': {
                 'id': 'sctk-mito-plot',
                 'title': 'SCTK: fraction mitochondrial reads per cell',
+                'xlab': '% mitochondrial read',
+                'ylab': 'density',
                 'data_labels': [
                     {'name': 'density', 'ylab': 'density', 'xlab': '% mitochondrial reads'},
                     {'name': 'cumulative', 'ylab': 'fraction of cells mito % > x', 'xlab': '% mitochondrial reads'},

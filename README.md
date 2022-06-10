@@ -12,7 +12,7 @@ Then clone this repo and install the plugin: `python setup.py install`
 
 ## Disable the plugin
 
-Use the `--disable-sctk` flag to disable the plugin execution.
+Use the `--disable_sctk` flag to disable the plugin execution.
 
 ## File name convention
 

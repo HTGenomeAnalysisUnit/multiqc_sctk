@@ -16,3 +16,6 @@ def multiqc_sctk_config():
     config.fn_clean_trim.extend([
         'SCTK_',
     ])
+    config.module_order.append(
+        {'sctk': {'module_tag': ['scRNA', 'VDJ', '10X']}}
+    )
